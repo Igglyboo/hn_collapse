@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Hacker News Collapse",
+  "description": "Collapse comments on Hacker News",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://news.ycombinator.com/*"],
+      "js": ["collapse.js"],
+      "css": ["collapse.css"]
+    }
+  ]
+}

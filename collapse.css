@@ -1,0 +1,11 @@
+.collapse{
+    cursor: pointer;
+}
+
+.collapse:hover{
+    text-decoration: none;
+}
+
+.hidden{
+    display: none;
+}
