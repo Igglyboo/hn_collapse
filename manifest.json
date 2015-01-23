@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Hacker News Collapse",
   "description": "Collapse comments on Hacker News",
-  "version": "1.0",
+  "version": "1.1",
   "content_scripts": [
     {
       "matches": ["https://news.ycombinator.com/*"],
