@@ -26,12 +26,12 @@
 
         collapseTag.textContent = ' [-] ';
         collapseTag.className = 'collapse';
-        collapseTag.onclick = getCollapseFunction(currentComment, currentCommentHeader, currentCommentBody);
+        collapseTag.onclick = getCollapseFunction(currentComment, currentCommentBody);
 
         currentCommentHeader.insertBefore(collapseTag, currentCommentHeader.firstChild);
     }
 
-    function getCollapseFunction(comment, commentHeader, commentBody) {
+    function getCollapseFunction(comment, commentBody) {
         return function () {
             var alreadyHidden = commentBody.classList.contains('hidden');
             if (alreadyHidden) {
