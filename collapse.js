@@ -9,7 +9,13 @@
         var collapseTag = document.createElement('a');
         collapseTag.textContent = ' [-] ';
         collapseTag.className = 'collapse';
+        collapseTag.onclick = collapseFunction;
         currentCommentHeader.insertBefore(collapseTag, currentCommentHeader.firstChild);
+    }
+
+    function collapseFunction(){
+        this.parentNode.parentNode.parentNode.getElementsByClassName('comment')[0].classList.toggle('hidden');
+        this.textContent = ' [+] ';
     }
 })();
 

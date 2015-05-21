@@ -1,8 +1,8 @@
-.collapse{
+.comhead a.collapse{
     cursor: pointer;
 }
 
-.collapse:hover{
+.comhead a.collapse:hover{
     text-decoration: none;
 }
 
