@@ -6,6 +6,13 @@
     text-decoration: none;
 }
 
-.hidden{
+.athing.hidden, td.default.hidden>span.comment, td.default.hidden>div.reply{
     display: none;
+}
+
+/*
+    Headers will jump around when collapsed if this is not used
+*/
+td.default.hidden{
+    padding-bottom: 14px;
 }

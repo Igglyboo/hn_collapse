@@ -5,7 +5,7 @@
   "version": "1.1",
   "content_scripts": [
     {
-      "matches": ["https://news.ycombinator.com/*"],
+      "matches": ["https://news.ycombinator.com/item?*", "https://news.ycombinator.com/threads?*"],
       "js": ["collapse.js"],
       "css": ["collapse.css"]
     }
