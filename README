@@ -1,6 +1,4 @@
 Chrome extension to collapse comments on Hacker News.
 
-Install using the .crx or have chrome pack the extension for you.
-
 This may periodically break due to HN changing their markup often and with no announcement.
 Last update was on May 21st 2015
