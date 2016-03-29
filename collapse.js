@@ -42,12 +42,12 @@
                 this.textContent = ' [+] '
             }
 
-            var parentIndentation = parseInt(comment.dataset.indentation);
+            var parentIndentation = parseInt(comment.dataset.indentation, 10);
             var nextElementSibling = comment.nextElementSibling;
             while (nextElementSibling !== null) {
-                var nextIndentation = parseInt(nextElementSibling.dataset.indentation);
+                var nextIndentation = parseInt(nextElementSibling.dataset.indentation, 10);
                 if (nextIndentation > parentIndentation) {
-                    var nextHiddenBy = parseInt(nextElementSibling.dataset.hiddenBy);
+                    var nextHiddenBy = parseInt(nextElementSibling.dataset.hiddenBy, 10);
                     if(nextHiddenBy === parentIndentation || nextHiddenBy === -1) {
                         if (alreadyHidden) {
                             nextElementSibling.classList.remove('hidden');
